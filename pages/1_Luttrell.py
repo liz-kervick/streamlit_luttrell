@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
 import numpy as np 
-import io
-import folium as folium 
+import io 
 from streamlit_folium import st_folium
 from streamlit_folium import folium_static
+import folium as folium 
 
 # READ IN FILES USING FUNCTIONS - this was just. not working. 
 
