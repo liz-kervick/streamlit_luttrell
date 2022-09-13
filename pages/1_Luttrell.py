@@ -15,7 +15,7 @@ import folium as folium
 #     return df_sum
     
     
-basepath= ""
+basepath= "liz-kervick/streamlit_luttrell"
 rawpath= "/files/"
 filename_df_sum= "luttrell_years_metadata.csv"
 filename_df_all='luttrell_by_entry_dates_metadata_sources_coords_ffill-7.csv'
