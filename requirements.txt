@@ -85,7 +85,7 @@ pandocfilters @ file:///opt/concourse/worker/volumes/live/d8ef4635-066d-4ffe-534
 parso @ file:///opt/conda/conda-bld/parso_1641458642106/work
 pexpect @ file:///tmp/build/80754af9/pexpect_1605563209008/work
 pickleshare @ file:///tmp/build/80754af9/pickleshare_1606932040724/work
-Pillow==8.4.0
+Pillow==9.0.1
 plac @ file:///opt/concourse/worker/volumes/live/1ed18b40-ee55-430c-5b85-4fd64311c24e/volume/plac_1608239094865/work
 ply==3.11
 preshed @ file:///opt/concourse/worker/volumes/live/a2e28b62-2832-4f60-59c3-3fd32077b564/volume/preshed_1621860833337/work
