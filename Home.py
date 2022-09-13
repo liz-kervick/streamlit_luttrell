@@ -1,4 +1,5 @@
 import streamlit as st
+import folium as folium
 
 st.set_page_config(
 	page_title='Rough Draft'
