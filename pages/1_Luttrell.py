@@ -15,10 +15,11 @@ import folium as folium
 #     return df_sum
     
     
-basepath= "/streamlit_luttrell"
+basepath= ""
 rawpath= "/files/"
 filename_df_sum= "luttrell_years_metadata.csv"
 filename_df_all='luttrell_by_entry_dates_metadata_sources_coords_ffill-7.csv'
+
 
 df_sum=pd.read_csv(basepath+rawpath+filename_df_sum)
 
