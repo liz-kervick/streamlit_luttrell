@@ -296,21 +296,27 @@ with tab4:
     
     m2 = 0
     m2 = folium.Map(location=(38.5521, -2.6090),zoom_start=2.43)
+    
+    @st.cache
+    def make_map(df_loc_year):
 
-    for (index,row) in df_loc_year.iterrows():
-        #folium.Marker(location=[row.loc['lat'],row.loc['lon']],
-    #                   popup=row.loc['text'],
-    #                   icon=
-    #                   tooltip=row.loc['gpe_sources_str']).add_to(m)
-        folium.CircleMarker([row.loc['lat'],row.loc['lon']],
-                            radius=10,
-                            popup=row.loc['text'],
-                            fill_opacity= 0.8,
-                            fill_color='#800080',
-                            fill=True,
-                            color='#000000',
-                            weight=0
-                           ).add_to(m2)
+        for (index,row) in df_loc_year.iterrows():
+            #folium.Marker(location=[row.loc['lat'],row.loc['lon']],
+        #                   popup=row.loc['text'],
+        #                   icon=
+        #                   tooltip=row.loc['gpe_sources_str']).add_to(m)
+            folium.CircleMarker([row.loc['lat'],row.loc['lon']],
+                                radius=10,
+                                popup=row.loc['text'],
+                                fill_opacity= 0.8,
+                                fill_color='#800080',
+                                fill=True,
+                                color='#000000',
+                                weight=0
+                               ).add_to(m2)
+            break
+            
+    make_map(df_loc_year)
 
     folium_static(m2, width=1050, height=800)
     
